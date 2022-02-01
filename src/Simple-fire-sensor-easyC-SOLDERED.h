@@ -26,7 +26,7 @@ class SimpleFireSensor : public SIMPLE_FIRE_SENSOR_EASYC::EasyC
     uint16_t lowerTresh(void);
     uint16_t upperTresh(void);
     void setLowerTresh(uint16_t);
-    void setuppertresh(uint16_t);
+    void setUpperTresh(uint16_t);
 
   protected:
     void initializeNative();
