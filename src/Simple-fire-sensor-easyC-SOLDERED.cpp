@@ -54,27 +54,35 @@ uint16_t SimpleFireSensor::getValue()
     return analogRead(pin);
 }
 
-/**
- * @brief       Function for calculating resistance of IR light sensor
- *
- * @return      resistance of IR light sensor
- */
-float SimpleFireSensor::getResistance()
+uint16_t SimpleFireSensor::lowerTresh(void)
 {
-    uint16_t temp = getValue();
-    if (temp != 0)
-    {
-        return R * (ADC_width - temp) / (float)temp;
-    }
-    return 0;
+    return treshold_low;
+}
+
+
+uint16_t SimpleFireSensor::upperTresh(void)
+{
+    return treshold_high;
 }
 
 /**
- * @brief       Function for setting ADC bit width of microcontroller
+ * @brief       Function for reading value of IR light sensor
  *
- * @param       uint8_t _ADC_width ADC bit width in bits
+ * @return      value of IR light sensor
  */
-void SimpleFireSensor::setADCWidth(uint8_t _ADC_width)
+void SimpleFireSensor::setLowerTresh(uint16_t _treshold_low)
 {
-    ADC_width = pow(2, _ADC_width) - 1;
+    treshold_low = _treshold_low;
 }
+
+/**
+ * @brief       Function for reading value of IR light sensor
+ *
+ * @return      value of IR light sensor
+ */
+void SimpleFireSensor::setuppertresh(uint16_t _treshold_high)
+{
+    treshold_high = _treshold_high;
+}
+
+

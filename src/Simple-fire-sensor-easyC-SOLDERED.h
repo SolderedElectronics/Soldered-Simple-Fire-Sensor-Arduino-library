@@ -23,15 +23,17 @@ class SimpleFireSensor : public SIMPLE_FIRE_SENSOR_EASYC::EasyC
     SimpleFireSensor();
     SimpleFireSensor(int);
     uint16_t getValue(void);
-    float getResistance(void);
-    void setADCWidth(uint8_t);
+    uint16_t lowerTresh(void);
+    uint16_t upperTresh(void);
+    void setLowerTresh(uint16_t);
+    void setuppertresh(uint16_t);
 
   protected:
     void initializeNative();
 
   private:
     int pin;
-    uint16_t ADC_width = 1023;
+    uint16_t treshold_low = 256, treshold_high = 768;
     char raw[2];
 };
 

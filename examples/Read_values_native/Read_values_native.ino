@@ -5,12 +5,12 @@
  * @brief       Example for using the digital and analog read functions for Simple fire sensor
  *
  *
- *	product: www.solde.red/333078
+ *	product: www.solde.red/333079
  *
  * @authors     Goran Juric for Soldered.com
  ***************************************************/
 
-#include "Simple-light-sensor-easyC-SOLDERED.h"
+#include "Simple-fire-sensor-easyC-SOLDERED.h"
 
 #define ANALOG_PIN A0
 #define DIGITAL_PIN 9
@@ -25,10 +25,6 @@ void setup()
 
     // Initialize the sensor
     sensor.begin();
-
-    // If different microcontroller with different bit width 
-    // is used, it should be set using this function
-    sensor.setADCWidth(10);
 }
 
 void loop()

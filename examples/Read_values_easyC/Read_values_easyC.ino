@@ -10,9 +10,7 @@
  *  @authors     Goran Juric for Soldered.com
  ***************************************************/
 
-#include "Simple-light-sensor-easyC-SOLDERED.h"
-
-#define TRESHHOLD 255
+#include "Simple-fire-sensor-easyC-SOLDERED.h"
 
 // Declare the sensor object
 SimpleLightSensor sensor;
@@ -25,9 +23,8 @@ void setup()
   // Initialize the sensor
   sensor.begin();
 
-  // If different microcontroller with different bit width
-  // is used, it should be set using this function
-  sensor.setADCWidth(10);
+  sensor.setLowerTresh(256); // You should set these two values, this is value when no fire is present
+  sensor.setUpperTresh(512); // This is value when fire is present (you can use lighter at 2m distance)
 }
 
 void loop()
@@ -36,7 +33,7 @@ void loop()
   Serial.print("IR light sensor reading: "); // Print information message
   Serial.println(sensor.getValue());  // Prints percent value of slider potentiometer
 
-  if (sensor.getValue() < TRESHOLD)
+  if (abs(sensor.getValue() - sensor.lowerTresh()) < abs(sensor.getValue() - sensor.upperTresh()))
   {
     Serial.println("Fire is detected!!");
   }
