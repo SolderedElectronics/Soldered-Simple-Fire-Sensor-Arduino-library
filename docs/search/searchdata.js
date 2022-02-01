@@ -2,10 +2,10 @@ var indexSectionsWithContent =
 {
   0: "abdeginprs",
   1: "es",
-  2: "e",
-  3: "egr",
-  4: "beirs",
-  5: "abdenp",
+  2: "s",
+  3: "egrs",
+  4: "begirs",
+  5: "abdenpr",
   6: "s"
 };
 

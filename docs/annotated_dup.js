@@ -1,7 +1,8 @@
 var annotated_dup =
 [
-    [ "EASYC_SOLDERED_LIBS", "namespace_e_a_s_y_c___s_o_l_d_e_r_e_d___l_i_b_s.html", [
-      [ "EasyC", "class_e_a_s_y_c___s_o_l_d_e_r_e_d___l_i_b_s_1_1_easy_c.html", "class_e_a_s_y_c___s_o_l_d_e_r_e_d___l_i_b_s_1_1_easy_c" ]
+    [ "SIMPLE_FIRE_SENSOR_EASYC", "namespace_s_i_m_p_l_e___f_i_r_e___s_e_n_s_o_r___e_a_s_y_c.html", [
+      [ "EasyC", "class_s_i_m_p_l_e___f_i_r_e___s_e_n_s_o_r___e_a_s_y_c_1_1_easy_c.html", "class_s_i_m_p_l_e___f_i_r_e___s_e_n_s_o_r___e_a_s_y_c_1_1_easy_c" ]
     ] ],
-    [ "Sensor", "class_sensor.html", "class_sensor" ]
+    [ "Sensor", "class_sensor.html", "class_sensor" ],
+    [ "SimpleLightSensor", "class_simple_light_sensor.html", "class_simple_light_sensor" ]
 ];
