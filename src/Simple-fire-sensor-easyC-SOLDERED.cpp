@@ -80,7 +80,7 @@ void SimpleFireSensor::setLowerTresh(uint16_t _treshold_low)
  *
  * @return      value of IR light sensor
  */
-void SimpleFireSensor::setuppertresh(uint16_t _treshold_high)
+void SimpleFireSensor::setUpperTresh(uint16_t _treshold_high)
 {
     treshold_high = _treshold_high;
 }
