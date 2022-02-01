@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pin_0',['pin',['../class_simple_light_sensor.html#a28e00a8672d771c54963671acd104373',1,'SimpleLightSensor']]]
+  ['pin_0',['pin',['../class_simple_fire_sensor.html#a514637ed18cccdf62925f70c6470192a',1,'SimpleFireSensor']]]
 ];

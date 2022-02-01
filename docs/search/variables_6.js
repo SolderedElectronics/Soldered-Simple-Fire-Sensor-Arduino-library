@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['raw_0',['raw',['../class_simple_light_sensor.html#a69892b1cd0c9f9cae82d7c7ae96e9e6b',1,'SimpleLightSensor']]]
+  ['raw_0',['raw',['../class_simple_fire_sensor.html#a7e8db89c19d1675f9278bb57f396b834',1,'SimpleFireSensor']]]
 ];
