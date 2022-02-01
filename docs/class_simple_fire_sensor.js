@@ -6,7 +6,7 @@ var class_simple_fire_sensor =
     [ "initializeNative", "class_simple_fire_sensor.html#a8440785463818b075ab8d718155880a3", null ],
     [ "lowerTresh", "class_simple_fire_sensor.html#a1e6ed8129681b59344fa0ffb3cf96013", null ],
     [ "setLowerTresh", "class_simple_fire_sensor.html#a61147325c161cbbe22e2851497a5a6cf", null ],
-    [ "setuppertresh", "class_simple_fire_sensor.html#a2a1fc6c9ab675d94566313ed6c70dc03", null ],
+    [ "setUpperTresh", "class_simple_fire_sensor.html#aed1789ed904bb48759f0918a2f6ed48c", null ],
     [ "upperTresh", "class_simple_fire_sensor.html#ac564c600e74585d61a3cfbc1c19ecfcf", null ],
     [ "pin", "class_simple_fire_sensor.html#a514637ed18cccdf62925f70c6470192a", null ],
     [ "raw", "class_simple_fire_sensor.html#a7e8db89c19d1675f9278bb57f396b834", null ],
