@@ -1,7 +1,7 @@
 /**
  **************************************************
  *
- * @file        Simple-light-sensor-easyC-SOLDERED.h
+ * @file        Simple-fire-sensor-easyC-SOLDERED.h
  * @brief       Header file for sensor specific code.
  *
  *
@@ -9,19 +9,19 @@
  * @authors     Goran Juric @ soldered.com
  ***************************************************/
 
-#ifndef _SIMPLE_LIGHT_SENSOR_EASYC_
-#define _SIMPLE_LIGHT_SENSOR_EASYC_
+#ifndef _SIMPLE_FIRE_SENSOR_EASYC_
+#define _SIMPLE_FIRE_SENSOR_EASYC_
 
 #include "Arduino.h"
 #include "libs/Generic-easyC/easyC.h"
 
 #define R 10000
 
-class SimpleLightSensor : public SIMPLE_LIGHT_SENSOR_EASYC::EasyC
+class SimpleFireSensor : public SIMPLE_FIRE_SENSOR_EASYC::EasyC
 {
   public:
-    SimpleLightSensor();
-    SimpleLightSensor(int);
+    SimpleFireSensor();
+    SimpleFireSensor(int);
     uint16_t getValue(void);
     float getResistance(void);
     void setADCWidth(uint8_t);
