@@ -54,21 +54,30 @@ uint16_t SimpleFireSensor::getValue()
     return analogRead(pin);
 }
 
+/**
+ * @brief       Function for setting lower treshold of sensing
+ *
+ * @return      lower treshold of sensing
+ */
 uint16_t SimpleFireSensor::lowerTresh(void)
 {
     return treshold_low;
 }
 
-
+/**
+ * @brief       Function for setting upper treshold of sensing
+ *
+ * @return      upper treshold of sensing
+ */
 uint16_t SimpleFireSensor::upperTresh(void)
 {
     return treshold_high;
 }
 
 /**
- * @brief       Function for reading value of IR light sensor
+ * @brief       Function for setting lower treshold of sensing
  *
- * @return      value of IR light sensor
+ * @param       uint16_t _treshold_low - value to set treshold
  */
 void SimpleFireSensor::setLowerTresh(uint16_t _treshold_low)
 {
@@ -76,9 +85,9 @@ void SimpleFireSensor::setLowerTresh(uint16_t _treshold_low)
 }
 
 /**
- * @brief       Function for reading value of IR light sensor
+ * @brief       Function for setting upper treshold of sensing
  *
- * @return      value of IR light sensor
+ * @param       uint16_t _treshold_high - value to set treshold
  */
 void SimpleFireSensor::setUpperTresh(uint16_t _treshold_high)
 {
