@@ -84,5 +84,3 @@ void SimpleFireSensor::setuppertresh(uint16_t _treshold_high)
 {
     treshold_high = _treshold_high;
 }
-
-

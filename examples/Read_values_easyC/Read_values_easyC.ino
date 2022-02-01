@@ -13,7 +13,7 @@
 #include "Simple-fire-sensor-easyC-SOLDERED.h"
 
 // Declare the sensor object
-SimpleLightSensor sensor;
+SimpleFireSensor sensor;
 
 void setup()
 {
