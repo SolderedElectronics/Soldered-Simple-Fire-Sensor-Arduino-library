@@ -23,8 +23,8 @@ void setup()
   // Initialize the sensor
   sensor.begin();
 
-  sensor.setLowerTresh(256); // You should set these two values, this is value when no fire is present
-  sensor.setUpperTresh(512); // This is value when fire is present (you can use lighter at 2m distance)
+  sensor.setLowerTresh(850); // You should set these two values, this is value when fire is present (you can use lighter at 1m distance)
+  sensor.setUpperTresh(1000); // This is value when no fire is present 
 }
 
 void loop()
