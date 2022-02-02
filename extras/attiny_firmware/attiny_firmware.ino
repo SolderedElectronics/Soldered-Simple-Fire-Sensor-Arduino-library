@@ -24,6 +24,8 @@ void setup()
     Wire.begin(addr);
     Wire.onReceive(receiveEvent);
     Wire.onRequest(requestEvent);
+    pinMode(PA4,OUTPUT);
+    digitalWrite(PA4,HIGH);
 }
 
 void loop()
