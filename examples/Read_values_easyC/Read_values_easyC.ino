@@ -31,7 +31,7 @@ void loop()
 {
 
   Serial.print("IR light sensor reading: "); // Print information message
-  Serial.println(sensor.getValue());  // Prints percent value of slider potentiometer
+  Serial.println(sensor.getValue());  // Prints percent value of fire sensor
 
   if (abs(sensor.getValue() - sensor.lowerTresh()) < abs(sensor.getValue() - sensor.upperTresh()))
   {
