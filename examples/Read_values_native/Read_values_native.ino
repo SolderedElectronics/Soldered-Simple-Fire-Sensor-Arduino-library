@@ -32,7 +32,7 @@ void loop()
     
 
   Serial.print("IR light sensor reading: "); // Print information message
-  Serial.println(sensor.getValue());  // Prints percent value of slider potentiometer
+  Serial.println(sensor.getValue());  // Prints percent value of fire sensor
 
   if (digitalRead(DIGITAL_PIN))
   {
