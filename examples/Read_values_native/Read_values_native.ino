@@ -9,11 +9,20 @@
  *
  * @authors     Goran Juric for Soldered.com
  ***************************************************/
+ 
+//Connecting diagram
+//
+//Breakout      Arduino
+//|-------------|
+//D0------------D9
+//A0------------A0
+//GND-----------GND
+//VCC-----------5V
 
 #include "Simple-fire-sensor-easyC-SOLDERED.h"
 
-#define ANALOG_PIN A0
-#define DIGITAL_PIN 9
+#define ANALOG_PIN A0       //Pin for analog read
+#define DIGITAL_PIN 9       //Pin for digital read
 
 // Declare the sensor object and set pin on which sensor is connected
 SimpleFireSensor sensor(ANALOG_PIN);
@@ -31,10 +40,13 @@ void loop()
 {
     
 
-  Serial.print("IR light sensor reading: "); // Print information message
-  Serial.println(sensor.getValue());  // Prints percent value of fire sensor
+  Serial.print("IR light sensor reading: "); 	// Print information message
+  Serial.println(sensor.getValue());  			// Prints percent value of fire sensor
 
-  if (digitalRead(DIGITAL_PIN))
+  if (digitalRead(DIGITAL_PIN))					//Potentiometer on breakout board is used to
+												//set treshold value. This function checks if
+												//treshold value is passed and determines if there
+												//is a fire nearby.
   {
     Serial.println("Fire is not detected.");
   }
