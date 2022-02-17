@@ -13,7 +13,7 @@
 #define _SIMPLE_FIRE_SENSOR_EASYC_
 
 #include "Arduino.h"
-#include "libs/Generic-easyC/easyC.h"
+#include "libs/Generic-easyC/easyC.hpp"
 
 #define R 10000
 
