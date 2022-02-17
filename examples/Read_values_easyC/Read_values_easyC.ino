@@ -1,13 +1,13 @@
 /**
  **************************************************
- *
- *  @file        Read_values_easyC.ino
- *  @brief       Example for using the digital and analog read functions for Simple fire sensor with easyC
- *
- *
- * 	product: www.solde.red/333077
- *
- *  @authors     Goran Juric for Soldered.com
+
+    @file        Read_values_easyC.ino
+    @brief       Example for using the digital and analog read functions for Simple fire sensor with easyC
+
+
+  	product: www.solde.red/333077
+
+    @authors     Goran Juric for Soldered.com
  ***************************************************/
 
 #include "Simple-fire-sensor-easyC-SOLDERED.h"
@@ -24,7 +24,7 @@ void setup()
   sensor.begin();
 
   sensor.setLowerTresh(850); // You should set these two values, this is value when fire is present (you can use lighter at 1m distance)
-  sensor.setUpperTresh(1000); // This is value when no fire is present 
+  sensor.setUpperTresh(1000); // This is value when no fire is present
 }
 
 void loop()
