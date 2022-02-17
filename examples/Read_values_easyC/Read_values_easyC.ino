@@ -32,16 +32,16 @@ void loop()
 
   Serial.print("IR light sensor reading: "); // Print information message
   Serial.println(sensor.getValue());  // Prints percent value of fire sensor
-
-  if (abs(sensor.getValue() - sensor.lowerTresh()) < abs(sensor.getValue() - sensor.upperTresh()))
+  
+  //This function checks to which value is closer value that has been read from sensor
+  if (abs(sensorf.getValue() - sensorf.lowerTresh()) < abs(sensorf.getValue() - sensorf.upperTresh()))
   {
-    Serial.println("Fire is detected!!");
+    Serial.println("Fire is detected!!");   //If sensor value is closer to lowerTresh value, fire is present
   }
 
   else
   {
-    Serial.println("Fire is not detected.");
+    Serial.println("Fire is not detected.");    //If sensor value is closer to upperTresh value, fire is present
   }
-  delay(1000);
 
 }
