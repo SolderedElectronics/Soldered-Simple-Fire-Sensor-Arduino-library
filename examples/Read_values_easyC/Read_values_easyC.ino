@@ -34,7 +34,7 @@ void loop()
   Serial.println(sensor.getValue());  // Prints percent value of fire sensor
   
   //This function checks to which value is closer value that has been read from sensor
-  if (abs(sensorf.getValue() - sensorf.lowerTresh()) < abs(sensorf.getValue() - sensorf.upperTresh()))
+  if (abs(sensor.getValue() - sensor.lowerTresh()) < abs(sensor.getValue() - sensor.upperTresh()))
   {
     Serial.println("Fire is detected!!");   //If sensor value is closer to lowerTresh value, fire is present
   }
