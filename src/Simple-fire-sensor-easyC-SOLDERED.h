@@ -17,7 +17,7 @@
 
 #define R 10000
 
-class SimpleFireSensor : public SIMPLE_FIRE_SENSOR_EASYC::EasyC
+class SimpleFireSensor : public EasyC
 {
   public:
     SimpleFireSensor();
