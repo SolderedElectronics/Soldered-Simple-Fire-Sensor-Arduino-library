@@ -41,7 +41,7 @@ void loop()
     
 
   Serial.print("IR light sensor reading: "); 	// Print information message
-  Serial.println(sensor.getValue());  			// Prints percent value of fire sensor
+  Serial.println(sensor.getValue());  			// Prints raw value of fire sensor
 
   if (digitalRead(DIGITAL_PIN))					//Potentiometer on breakout board is used to
 												//set treshold value. This function checks if
