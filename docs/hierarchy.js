@@ -1,7 +1,6 @@
 var hierarchy =
 [
-    [ "EasyC", "class_easy_c.html", null ],
-    [ "SIMPLE_FIRE_SENSOR_EASYC::EasyC", null, [
+    [ "EasyC", "class_easy_c.html", [
       [ "SimpleFireSensor", "class_simple_fire_sensor.html", null ]
     ] ]
 ];
