@@ -34,10 +34,6 @@ void setup()
 
   // Initialize the sensor
   sensor.begin();
-   
-  // If different microcontroller with different bit width
-  // is used, it should be set using this function
-  sensor.setADCWidth(10);
 }
 
 void loop()
