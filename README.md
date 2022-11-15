@@ -14,7 +14,7 @@ OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/en/easyC).
 - ***other*** - *keywords* file highlights function words in your IDE, *library.properties* enables implementation with Arduino Library Manager.
 
 ### Hardware design
-You can find hardware design for this board in [*Simple fire sensor board with easyC*](https://github.com/SolderedElectronics/NAZIVPROIZVODA-hardware-design) hardware repository.
+You can find hardware design for this board in [*Simple fire sensor board with easyC*](https://github.com/SolderedElectronics/Simple-fire-sensor-board-with-easyC-hardware-design) hardware repository.
 
 ### Documentation
 
