@@ -27,6 +27,7 @@ class SimpleFireSensor : public EasyC
     uint16_t upperTresh(void);
     void setLowerTresh(uint16_t);
     void setUpperTresh(uint16_t);
+    void setThreshold(byte);
 
   protected:
     void initializeNative();
@@ -34,7 +35,8 @@ class SimpleFireSensor : public EasyC
   private:
     int pin;
     uint16_t treshold_low = 256, treshold_high = 768;
-    char raw[2];
+    byte data[2], threshold;
+    uint16_t resistance;
 };
 
 #endif
