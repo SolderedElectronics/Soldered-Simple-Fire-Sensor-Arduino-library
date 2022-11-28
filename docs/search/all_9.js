@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['raw_0',['raw',['../class_simple_fire_sensor.html#a7e8db89c19d1675f9278bb57f396b834',1,'SimpleFireSensor']]],
-  ['readdata_1',['readData',['../class_easy_c.html#a9a3d39be50b348768bc4b5dea3dae01a',1,'EasyC']]],
-  ['readme_2emd_2',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['readregister_3',['readRegister',['../class_easy_c.html#a45bd6c915c1fa0998e273f69ee2d2376',1,'EasyC']]]
+  ['readdata_0',['readData',['../class_easy_c.html#a9a3d39be50b348768bc4b5dea3dae01a',1,'EasyC']]],
+  ['readme_2emd_1',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['readregister_2',['readRegister',['../class_easy_c.html#a45bd6c915c1fa0998e273f69ee2d2376',1,'EasyC']]],
+  ['resistance_3',['resistance',['../class_simple_fire_sensor.html#a11c7f2ebc40ceb0c94e1503977098757',1,'SimpleFireSensor']]]
 ];
