@@ -48,8 +48,17 @@ uint16_t SimpleFireSensor::getValue()
 {
     if (!native)
     {
-        readRegister(ANALOG_READ_REG, raw, 2 * sizeof(uint8_t));
-        return raw[0] | (raw[1]) << 8;
+        Wire.beginTransmission(address);
+        Wire.requestFrom(address, 2);
+
+        if (Wire.available())
+        {
+            Wire.readBytes(data, 2);
+        }
+        Wire.endTransmission();
+
+        resistance = *(uint16_t *)data;
+        return resistance;
     }
     return analogRead(pin);
 }
@@ -92,4 +101,21 @@ void SimpleFireSensor::setLowerTresh(uint16_t _treshold_low)
 void SimpleFireSensor::setUpperTresh(uint16_t _treshold_high)
 {
     treshold_high = _treshold_high;
+}
+
+/**
+ * @brief       Function to set threshold value to turn on the LED
+ * 
+ * @param       byte _threshold value in %
+*/
+void SimpleFireSensor::setThreshold(byte _threshold)
+{
+    if(_threshold > 100)
+    {
+        return;
+    }
+    threshold = _threshold;
+    Wire.beginTransmission(address);
+    Wire.write(threshold);
+    Wire.endTransmission();
 }
