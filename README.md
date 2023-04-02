@@ -19,7 +19,7 @@ You can find hardware design for this board in *Simple fire sensor board with ea
 
 ### Documentation
 
-Access Arduino library documentation [here](https://SolderedElectronics.github.io/Soldered-Simple-Fire-Sensor-Arduino-Library/).
+Access Arduino library documentation [here](https://solderedelectronics.github.io/Soldered-Simple-Fire-Sensor-Arduino-library/).
 
 - Tutorial for using the Simple fire sensor board
 - Installing an Arduino library

@@ -5,17 +5,17 @@
 ##################################################
 # Datatypes 		(KEYWORD1)
 ##################################################
-SimpleFireSensor		KEYWORD1
+SimpleFireSensor	KEYWORD1
 ##################################################
 # Methods and Functions (KEYWORD2)
 ##################################################
 
-begin	    		  KEYWORD2
-getValue		    KEYWORD2
-setLowerTresh		KEYWORD2
-setUpperTresh		    KEYWORD2
-lowerTresh		    KEYWORD2
-upperTresh		    KEYWORD2
+begin	KEYWORD2
+getValue	KEYWORD2
+setLowerTresh	KEYWORD2
+setUpperTresh	KEYWORD2
+lowerTresh	KEYWORD2
+upperTresh	KEYWORD2
 
 ##################################################
 # Constants (LITERAL1)
