@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Simple fire sensor easyC Library", "index.html", [
-    [ "Simple fire sensor board with easyC Arduino library", "index.html", "index" ],
+    [ "Simple fire sensor board Arduino library", "index.html", "index" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
