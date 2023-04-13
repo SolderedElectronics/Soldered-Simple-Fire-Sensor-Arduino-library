@@ -12,10 +12,17 @@ SimpleFireSensor	KEYWORD1
 
 begin	KEYWORD2
 getValue	KEYWORD2
-setLowerTresh	KEYWORD2
+getRawValue	KEYWORD2
+getLowerTresh	KEYWORD2
+getUpperTresh	KEYWORD2
+getRawLowerTresh	KEYWORD2
+getRawUpperTresh	KEYWORD2
 setUpperTresh	KEYWORD2
-lowerTresh	KEYWORD2
-upperTresh	KEYWORD2
+setLowerTresh	KEYWORD2
+setRawLowerTresh	KEYWORD2
+setRawUpperTresh	KEYWORD2
+setThreshold	KEYWORD2
+setRawThreshold	KEYWORD2
 
 ##################################################
 # Constants (LITERAL1)

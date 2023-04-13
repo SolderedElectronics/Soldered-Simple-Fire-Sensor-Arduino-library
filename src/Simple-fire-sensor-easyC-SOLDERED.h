@@ -2,11 +2,11 @@
  **************************************************
  *
  * @file        Simple-fire-sensor-easyC-SOLDERED.h
- * @brief       Header file for sensor specific code.
+ * @brief       Header file for simple fire sensor.
  *
  *
  * @copyright   GNU General Public License v3.0
- * @authors     Goran Juric @ soldered.com
+ * @authors     Goran Juric & Karlo Leksic @ soldered.com
  ***************************************************/
 
 #ifndef _SIMPLE_FIRE_SENSOR_EASYC_
@@ -22,12 +22,18 @@ class SimpleFireSensor : public EasyC
   public:
     SimpleFireSensor();
     SimpleFireSensor(int);
-    uint16_t getValue(void);
-    uint16_t lowerTresh(void);
-    uint16_t upperTresh(void);
-    void setLowerTresh(uint16_t);
-    void setUpperTresh(uint16_t);
-    void setThreshold(byte);
+    float getValue(void);
+    uint16_t getRawValue(void);
+    float getLowerTresh(void);
+    float getUpperTresh(void);
+    uint16_t getRawLowerTresh(void);
+    uint16_t getRawUpperTresh(void);
+    void setUpperTresh(float);
+    void setLowerTresh(float);
+    void setRawLowerTresh(uint16_t);
+    void setRawUpperTresh(uint16_t);
+    void setThreshold(float);
+    void setRawThreshold(uint16_t);
 
   protected:
     void initializeNative();
@@ -37,6 +43,7 @@ class SimpleFireSensor : public EasyC
     uint16_t treshold_low = 256, treshold_high = 768;
     byte data[2], threshold;
     uint16_t resistance;
+    
 };
 
 #endif
