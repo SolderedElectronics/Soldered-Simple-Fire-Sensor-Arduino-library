@@ -43,7 +43,6 @@ class SimpleFireSensor : public EasyC
     uint16_t treshold_low = 256, treshold_high = 768;
     byte data[2], threshold;
     uint16_t resistance;
-    
 };
 
 #endif
