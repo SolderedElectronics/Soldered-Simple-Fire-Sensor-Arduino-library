@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lowertresh_0',['lowerTresh',['../class_simple_fire_sensor.html#a1e6ed8129681b59344fa0ffb3cf96013',1,'SimpleFireSensor']]]
+  ['native_0',['native',['../class_easy_c.html#abb766b60f26778dbc64e8792fd754729',1,'EasyC']]]
 ];
