@@ -23,11 +23,11 @@ class SimpleFireSensor : public EasyC
     SimpleFireSensor();
     SimpleFireSensor(int);
     float getValue(void);
-    uint16_t getRawValue(void);
+    int getRawValue(void);
     float getLowerTresh(void);
     float getUpperTresh(void);
-    uint16_t getRawLowerTresh(void);
-    uint16_t getRawUpperTresh(void);
+    int getRawLowerTresh(void);
+    int getRawUpperTresh(void);
     void setUpperTresh(float);
     void setLowerTresh(float);
     void setRawLowerTresh(uint16_t);
@@ -43,7 +43,6 @@ class SimpleFireSensor : public EasyC
     uint16_t treshold_low = 256, treshold_high = 768;
     byte data[2], threshold;
     uint16_t resistance;
-    
 };
 
 #endif

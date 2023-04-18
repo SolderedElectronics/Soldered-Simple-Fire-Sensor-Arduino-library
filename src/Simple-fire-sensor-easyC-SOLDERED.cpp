@@ -54,7 +54,7 @@ float SimpleFireSensor::getValue()
  *
  * @return      Raw value of IR light sensor (0 - 1023)
  */
-uint16_t SimpleFireSensor::getRawValue()
+int SimpleFireSensor::getRawValue()
 {
     if (!native)
     {
@@ -63,11 +63,11 @@ uint16_t SimpleFireSensor::getRawValue()
         readData(data, 2);
 
         // Convert it to uint16_t
-        uint16_t resistance = 0;
-        resistance = *(uint16_t *)data;
+        uint16_t value = 0;
+        value = *(uint16_t *)data;
 
         // Return converted value
-        return resistance;
+        return value;
     }
     return analogRead(pin);
 }
@@ -77,7 +77,7 @@ uint16_t SimpleFireSensor::getRawValue()
  *
  * @return      Raw lower treshold of sensing (0 - 1023)
  */
-uint16_t SimpleFireSensor::getRawLowerTresh(void)
+int SimpleFireSensor::getRawLowerTresh(void)
 {
     return treshold_low;
 }
@@ -87,7 +87,7 @@ uint16_t SimpleFireSensor::getRawLowerTresh(void)
  *
  * @return      Raw upper treshold of sensing (0 - 1023)
  */
-uint16_t SimpleFireSensor::getRawUpperTresh(void)
+int SimpleFireSensor::getRawUpperTresh(void)
 {
     return treshold_high;
 }
