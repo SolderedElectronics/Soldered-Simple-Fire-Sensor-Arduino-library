@@ -23,11 +23,11 @@ class SimpleFireSensor : public EasyC
     SimpleFireSensor();
     SimpleFireSensor(int);
     float getValue(void);
-    uint16_t getRawValue(void);
+    int getRawValue(void);
     float getLowerTresh(void);
     float getUpperTresh(void);
-    uint16_t getRawLowerTresh(void);
-    uint16_t getRawUpperTresh(void);
+    int getRawLowerTresh(void);
+    int getRawUpperTresh(void);
     void setUpperTresh(float);
     void setLowerTresh(float);
     void setRawLowerTresh(uint16_t);
