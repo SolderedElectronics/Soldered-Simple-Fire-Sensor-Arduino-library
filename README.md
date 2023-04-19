@@ -1,6 +1,8 @@
 # Simple fire sensor board Arduino library
 
 [![Make docs and publish to GitHub Pages](https://github.com/SolderedElectronics/Soldered-Simple-Fire-Sensor-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-Simple-Fire-Sensor-Arduino-Library/actions/workflows/make_docs.yml)
+[![Arduino Library Manager Compatibility](https://github.com/SolderedElectronics/Soldered-Simple-Fire-Sensor-Arduino-Library/actions/workflows/arduino_lint.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-Simple-Fire-Sensor-Arduino-Library/actions/workflows/arduino_lint.yml)
+
 
 | ![Simple fire sensor](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg)    |
 | :---------------------------------------------------------------------------------------------: |
